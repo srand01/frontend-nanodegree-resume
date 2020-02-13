@@ -23,3 +23,5 @@ var bio = {
 
 
 };
+
+$("main").append(bio);
