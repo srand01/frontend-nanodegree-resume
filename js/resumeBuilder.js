@@ -24,4 +24,17 @@ var bio = {
 
 };
 
-$("main").append(bio);
+$("#main").append(bio);
+
+var work = {};
+work.position = "Developer";
+work.employer = "Self-employed";
+work.years = 2;
+
+var education = {};
+education["name"] = "University";
+education["years"] = "2013-2018";
+education["city"] = "US";
+
+$("#main").append(work["position"]);
+$("#main").append(education.name);
