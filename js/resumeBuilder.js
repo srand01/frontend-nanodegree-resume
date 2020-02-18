@@ -1,12 +1,6 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-var formattedRole = HTMLheaderRole.replace("%data%", "Web developer");
-$("#header").prepend(formattedRole);
-
-var formattedName = HTMLheaderName.replace("%data%", "srand01");
-$("#header").prepend(formattedName);
-
 var bio = {
     "name": "srand01",
     "role": "Web Developer",
@@ -20,21 +14,57 @@ var bio = {
     "WelcomeMessage": "Hi there!",
     "skills": ["HTML", "CSS", "JAVASCRIPT"],
     "bioPic": "chairmander.png"
+}
 
+var education = {
+    "schools": [
+        {
+            "name": "University",
+            "location": "USA",
+            "degree": "BA",
+            "majors": ["Communication"],
+            "dates": 2018,
+            "url": "http://example.com"
+        },
+        {
+            "name": "srand01",
+            "location": "earth",
+            "degree": "BA",
+            "majors": ["communication"],
+            "dates": 2018,
+            "url": "http://example"
+        }
+    ],
 
-};
+    "onlineCourses": [
+        {
+            "title": "JavaScript Syntax",
+            "school": "Udacity",
+            "dates": 2020,
+            "url": "htt"
+        }
+    ]
+}
 
-$("#main").append(bio);
+var work = {
+    "employer": "Planet Express",
+    "title": "Delivery Boy",
+    "dates": "January 3000 - Future",
+    "description": "Who moved my cheese cheesy feet cauliflower cheese",
 
-var work = {};
-work.position = "Developer";
-work.employer = "Self-employed";
-work.years = 2;
+}
 
-var education = {};
-education["name"] = "University";
-education["years"] = "2013-2018";
-education["city"] = "US";
+var projects = {
+    "projects": [
+        {
+            "title": "Sample Project 1",
+            "dates": "2014",
+            "description": "Who moved my cheese cheesy feet cauliflower",
+            "images": [
+                "https://images.dog.ceo/breeds/spaniel-japanese/n02085782_382.jpg",
+                "https://images.dog.ceo/breeds/eskimo/n02109961_11634.jpg"
+            ]
+        }
 
-$("#main").append(work["position"]);
-$("#main").append(education.name);
+    ]
+}
