@@ -2,7 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 var bio = {
-    "name": "srand01",
+    "name": "Srand01",
     "role": "Web Developer",
     "contacts": {
         "mobile": "000-000-0000",
@@ -100,3 +100,6 @@ if (bio.skills.length > 0) {
     $("#skills").append(formattedSkill);
 
 }
+
+
+$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
