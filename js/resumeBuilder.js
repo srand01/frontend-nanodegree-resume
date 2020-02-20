@@ -47,7 +47,7 @@ var education = {
 }
 
 var work = {
-    "jobs"[
+    "jobs": [
         {
             "employer": "Planet Express",
             "title": "Delivery Boy",
