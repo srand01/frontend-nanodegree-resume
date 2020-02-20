@@ -47,11 +47,20 @@ var education = {
 }
 
 var work = {
-    "employer": "Planet Express",
-    "title": "Delivery Boy",
-    "dates": "January 3000 - Future",
-    "description": "Who moved my cheese cheesy feet cauliflower cheese",
-
+    "jobs"[
+        {
+            "employer": "Planet Express",
+            "title": "Delivery Boy",
+            "dates": "January 3000 - Future",
+            "description": "Who moved my cheese cheesy feet cauliflower cheese",
+        },
+        {
+            "employer": "Panucci's Pizza",
+            "title": "Delivery Boy",
+            "dates": "1998 - December 31, 1999",
+            "description": "Who moved my cheese cheesy feet cauliflower cheese",
+        }
+    ]
 }
 
 var projects = {
@@ -64,7 +73,30 @@ var projects = {
                 "https://images.dog.ceo/breeds/spaniel-japanese/n02085782_382.jpg",
                 "https://images.dog.ceo/breeds/eskimo/n02109961_11634.jpg"
             ]
+        },
+        {
+            "title": "Sample Project 2",
+            "dates": "2018",
+            "description": "Who moved my cheese cheesy feet cauliflower",
+            "images": [
+                "https://images.dog.ceo/breeds/spaniel-japanese/n02085782_382.jpg",
+                "https://images.dog.ceo/breeds/eskimo/n02109961_11634.jpg"
+            ]
         }
 
     ]
+}
+
+if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+    $("#skills").append(formattedSkill);
+
 }
