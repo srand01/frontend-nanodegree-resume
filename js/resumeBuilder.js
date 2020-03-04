@@ -123,24 +123,24 @@ function displayWork() {
 
 displayWork();
 
+projects.display = function () {
+    for (project in projects.projects) {
+        $("#projects").append(HTMLprojectStart);
 
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        $(".project-entry:last").append(formattedTitle);
+        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+        $(".project-entry:last").append(formattedDates);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+        $(".project-entry:last").append(formattedDescription);
 
-
-
-function inName(name) {
-    name = name.trim().split(" ");
-    console.log(name);
-    name[1] = name[1].toUpperCase();
-    name[0] = name[0].slice(0, 1).toUpperCase() +
-        name[0].slice(1).toLowerCase();
-
-    return name[0] + " " + name[1];
-
-
+        if (projects.projects[project].images.length > 0) {
+            for (image in projects.projects[project].images) {
+                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+                $(".project-entry:last").append(formattedImage);
+            }
+        }
+    }
 }
 
-
-
-$("main").append(internationalizeButton);
-
-
+projects.display();
