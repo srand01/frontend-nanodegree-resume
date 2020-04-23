@@ -23,6 +23,14 @@ h6 {
 .project-entry {
   padding: 0 5%;
 }
+/*FIXING WIDTH OF IMAGES IN PROJECTS*/
+.project-entry img {
+  /* display: block; */
+  object-fit: cover;
+  width: 197px;
+  height: 148px; 
+}
+/*************************************/
 
 h1 {
   font-size: 40px;
